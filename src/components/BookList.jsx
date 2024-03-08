@@ -10,7 +10,7 @@ import axios from 'axios';
 export default function BookList() {
     const [books, setBooks] = React.useState([]);
     React.useEffect(() => {
-        const fetchData = async () => {
+        const getBooks = async () => {
           try {
             const response = await axios.get('http://127.0.0.1:8000/');
             setBooks(response.data.result.rows);
@@ -19,9 +19,20 @@ export default function BookList() {
           }
         };
     
-        fetchData(); 
+        getBooks(); 
       }, []);
+// const deleteBook = async () => {
+//     try {
+//       const response = await axios.delete(`http://127.0.0.1:8000/${id}`);
+//       setBooks(response.data.result.rows);
+//     } catch (error) {
+//       console.error('DELETE isteğinde hata meydana geldi:', error);
+//     }
+//   };
 
+//   handleDelete =()=>{
+//     deleteBook(id)
+//   }
 
   return (
     <>
@@ -50,7 +61,7 @@ export default function BookList() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Delete</Button>
+            <Button size="small" >Delete</Button>
             <Button size="small">Edit</Button>
           </CardActions>
         </Card>
