@@ -12,7 +12,7 @@ export default function BookList() {
     React.useEffect(() => {
         const getBooks = async () => {
           try {
-            const response = await axios.get('http://127.0.0.1:8000/');
+            const response = await axios.get('https://book-fullstack-assignment.onrender.com/');
             setBooks(response.data.result.rows);
           } catch (error) {
             console.error('GET isteğinde hata meydana geldi:', error);

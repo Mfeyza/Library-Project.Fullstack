@@ -37,7 +37,7 @@ export default function MultiActionAreaCard() {
   
     const handleSubmit = async () => {
       try {
-        const response = await axios.post('http://127.0.0.1:8000/', formData);
+        const response = await axios.post('https://book-fullstack-assignment.onrender.com/', formData);
         console.log(response.data);
        return response
       } catch (error) {
