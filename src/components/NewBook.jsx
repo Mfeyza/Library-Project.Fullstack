@@ -41,7 +41,7 @@ export default function MultiActionAreaCard() {
         console.log(response.data);
        return response
       } catch (error) {
-        console.error('POST isteğinde hata:', error);
+        console.error('POST isteğinde hat:', error);
       }
     };
   
