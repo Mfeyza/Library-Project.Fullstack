@@ -4,7 +4,6 @@ import NewBook from "./components/NewBook";
 import axios from "axios";
 import React from "react";
 import {
-  toastWarnNotify,
   toastErrorNotify,
   toastSuccessNotify,
 } from "./helper/toastData";

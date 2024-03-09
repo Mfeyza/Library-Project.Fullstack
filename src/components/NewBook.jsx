@@ -1,21 +1,8 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import axios from "axios";
-import {
-  Box,
-  Button,
-  CardActionArea,
-  CardActions,
-  InputLabel,
-  MenuItem,
-  Select,
-  Stack,
-  TextField,
-} from "@mui/material";
-import genreItem from "../helper/toastData";
+import { Box, Button, CardActions, Stack, TextField } from "@mui/material";
 
 export default function NewBook({ postBook, formData, setFormData }) {
   const handleChange = (event) => {
@@ -60,7 +47,7 @@ export default function NewBook({ postBook, formData, setFormData }) {
             maxWidth: 345,
             mt: 5,
             backgroundColor: "rgba(255, 255, 255, 0.603)",
-           }}
+          }}
         >
           <form onSubmit={handleSubmit}>
             <CardContent>
