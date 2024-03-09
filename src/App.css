@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  font-family: "Madimi One", sans-serif !important;
+  font-weight: bold !important;
+}
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+button {
+    color: rgb(43, 105, 18) !important;
+}
