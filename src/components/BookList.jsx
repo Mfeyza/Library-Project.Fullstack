@@ -27,7 +27,7 @@ const BookList = ({ getBooks, books, setBooks, deleteBook, setInfo }) => {
 
   React.useEffect(() => {
     getBooks();
-  }, [getBooks]);
+  }, []);
 
   const handleDelete = (id) => {
     deleteBook(id);
